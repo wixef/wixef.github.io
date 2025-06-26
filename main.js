@@ -128,20 +128,117 @@ let slider_4 = document.querySelector('.slider-4')
 let slider_5 = document.querySelector('.slider-5')
 let slider_6 = document.querySelector('.slider-6')
 slider_link_1.addEventListener('click', function(){
-    slider_1.style.display='block'
+    slider_1.style.display='flex'
     slider_2.style.display='none'
     slider_3.style.display='none'
     slider_4.style.display='none'
     slider_5.style.display='none'
     slider_6.style.display='none'
-        slider_link_1.style.borderBottom='block'
+    slider_link_1.style.borderBottom='4px solid black'
+    slider_link_2.style.borderBottom='none'
+    slider_link_3.style.borderBottom='none'
+    slider_link_4.style.borderBottom='none'
+    slider_link_5.style.borderBottom='none'
+    slider_link_6.style.borderBottom='none'
+
 })
 slider_link_2.addEventListener('click', function(){
     slider_1.style.display='none'
-    slider_2.style.display='block'
+    slider_2.style.display='flex'
     slider_3.style.display='none'
     slider_4.style.display='none'
     slider_5.style.display='none'
     slider_6.style.display='none'
     slider_link_1.style.borderBottom='none'
+    slider_link_2.style.borderBottom='4px solid black'
+    slider_link_3.style.borderBottom='none'
+    slider_link_4.style.borderBottom='none'
+    slider_link_5.style.borderBottom='none'
+    slider_link_6.style.borderBottom='none'
+})
+
+slider_link_3.addEventListener('click', function(){
+    slider_1.style.display='none'
+    slider_2.style.display='none'
+    slider_3.style.display='flex'
+    slider_4.style.display='none'
+    slider_5.style.display='none'
+    slider_6.style.display='none'
+    slider_link_1.style.borderBottom='none'
+    slider_link_3.style.borderBottom='4px solid black'
+    slider_link_2.style.borderBottom='none'
+    slider_link_4.style.borderBottom='none'
+    slider_link_5.style.borderBottom='none'
+    slider_link_6.style.borderBottom='none'
+})
+
+slider_link_4.addEventListener('click', function(){
+    slider_1.style.display='none'
+    slider_2.style.display='none'
+    slider_3.style.display='none'
+    slider_4.style.display='flex'
+    slider_5.style.display='none'
+    slider_6.style.display='none'
+    slider_link_1.style.borderBottom='none'
+    slider_link_4.style.borderBottom='4px solid black'
+    slider_link_2.style.borderBottom='none'
+    slider_link_3.style.borderBottom='none'
+    slider_link_5.style.borderBottom='none'
+    slider_link_6.style.borderBottom='none'
+})
+
+slider_link_5.addEventListener('click', function(){
+    slider_1.style.display='none'
+    slider_2.style.display='none'
+    slider_3.style.display='none'
+    slider_4.style.display='none'
+    slider_5.style.display='flex'
+    slider_6.style.display='none'
+    slider_link_1.style.borderBottom='none'
+    slider_link_5.style.borderBottom='4px solid black'
+    slider_link_2.style.borderBottom='none'
+    slider_link_4.style.borderBottom='none'
+    slider_link_3.style.borderBottom='none'
+    slider_link_6.style.borderBottom='none'
+})
+
+slider_link_6.addEventListener('click', function(){
+    slider_1.style.display='none'
+    slider_2.style.display='none'
+    slider_3.style.display='none'
+    slider_4.style.display='none'
+    slider_5.style.display='none'
+    slider_6.style.display='flex'
+    slider_link_1.style.borderBottom='none'
+    slider_link_6.style.borderBottom='4px solid black'
+    slider_link_2.style.borderBottom='none'
+    slider_link_3.style.borderBottom='none'
+    slider_link_5.style.borderBottom='none'
+    slider_link_4.style.borderBottom='none'
+})
+
+let header = document.querySelector('.header')
+let header_back = document.querySelector('.header-back')
+let header_menu_client = document.querySelector('.header-menu-client')
+let header_menu_auth = document.querySelector('.header-menu-auth')
+
+window.addEventListener('scroll', function(){
+    if(window.scrollY>1000){
+        header.style.background='white'
+        header_back.style.background='white'
+        header.style.color='black'
+        header_menu_client.style.border='3px solid black'
+        header_menu_auth.style.borderColor='black'
+        header_menu_auth.style.backgroundColor='black'
+        header_menu_auth.style.color='white'
+    }
+    else{
+        header.style.background='#7F42E1'
+        header_back.style.background='#7F42E1'
+        header.style.color='white'
+        header_menu_client.style.border='3px solid white'
+        header_menu_auth.style.borderColor='white'
+        header_menu_auth.style.backgroundColor='white'
+        header_menu_auth.style.color='black'
+    }
 })

@@ -62,6 +62,7 @@ body {
     padding: 15px 20px 15px 20px;
     border-radius: 17px;
     border-color: #FFFFFF;
+    text-decoration: none;
 
 }
 
@@ -374,6 +375,7 @@ body {
     align-items: center;
 }
 
+
 .slider-title {
     font-size: 56px;
     margin-bottom: 55px;
@@ -447,10 +449,12 @@ body {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    display: none;
 }
 
 .slider-1 {
     background-color: #E7DBFD;
+    display: flex;
 }
 
 .slider-2 {
@@ -478,7 +482,7 @@ body {
 }
 
 .slider-text {
-    
+    margin: 20px;
 }
 
 .slider-img {
