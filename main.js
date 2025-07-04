@@ -242,3 +242,16 @@ window.addEventListener('scroll', function(){
         header_menu_auth.style.color='black'
     }
 })
+
+let burger_btn = document.querySelector('.burger-btn')
+let cut = document.querySelector('.cut')
+let burger = document.querySelector('.burger')
+let crest_btn = document.querySelector('.crest-btn')
+burger_btn.addEventListener('click', function(){
+    burger.style.display='block'
+    cut.style.display='none'
+})
+crest_btn.addEventListener('click', function(){
+    burger.style.display='none'
+    cut.style.display='block'
+})

@@ -467,7 +467,7 @@ body {
     padding-bottom: 15px;
 }
 
-.slider-link-1:hover, .slider-link-2:hover, .slider-link-3:hover, .slider-link-4:hover, .slider-link-5:hover {
+.slider-link-1:hover, .slider-link-2:hover, .slider-link-3:hover, .slider-link-4:hover, .slider-link-5:hover, .slider-link-6:hover {
 cursor: pointer;
 }
 
@@ -563,6 +563,10 @@ cursor: pointer;
 }
 
 .burger {
+    display: none;
+}
+
+.burger-btn {
     border:  3px solid #FFFFFF;
     padding: 15px 20px 15px 20px;
     border-radius: 17px;
@@ -570,8 +574,67 @@ cursor: pointer;
     height: 25px;
 }
 
+.crest-btn {
+    border:  3px solid black;
+    padding: 15px 20px 15px 20px;
+    border-radius: 17px;
+    background-color: black;
+    height: 25px;
+}
+
+.burger {
+    color: black;
+    min-height: 1000px;
+}
+
+.header-back-burger {
+    text-align: left;
+    padding: 0px 1%;
+    font-family: "Days One", sans-serif;
+    font-style: 400;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    column-gap: 40px;
+    align-items: center;
+    min-width: 98%;
+    padding-bottom: 20px;
+}
+
+.header-menu-burger {
+    column-gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-auth-burger {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.header-menu-client-burger {
+    font-family: "Days One", sans-serif;
+    font-size: 24px;
+    border:  3px solid #FFFFFF;
+    padding: 15px 20px 15px 20px;
+    border-radius: 17px;
+
+}
+
+.header-menu-auth-burger {
+    font-family: "Days One", sans-serif;
+    font-size: 24px;
+    color: black;
+    padding: 15px 20px 15px 20px;
+    border-radius: 17px;
+    border-color: #FFFFFF;
+    text-decoration: none;
+}
+
 @media (max-width: 2025px){
-    .burger{
+    .burger-btn{
         display: block;
     }
     .header-menu{
@@ -608,6 +671,9 @@ cursor: pointer;
     .main-h{
         font-size: 58px;
     }
+    .cl-btn{
+        min-width: none;
+    }
 
 }
 
@@ -617,6 +683,9 @@ cursor: pointer;
         font-size: 40px;
     }
     .img4{
+        display: none;
+    }
+    .header-menu-client {
         display: none;
     }
 }
