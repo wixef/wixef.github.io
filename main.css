@@ -602,8 +602,12 @@ cursor: pointer;
 }
 
 .header-menu-burger {
-    column-gap: 40px;
-    align-items: center;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    column-gap: 35px;
+    row-gap: 35px;
     flex-wrap: wrap;
 }
 
@@ -620,7 +624,6 @@ cursor: pointer;
     border:  3px solid #FFFFFF;
     padding: 15px 20px 15px 20px;
     border-radius: 17px;
-
 }
 
 .header-menu-auth-burger {
@@ -631,6 +634,11 @@ cursor: pointer;
     border-radius: 17px;
     border-color: #FFFFFF;
     text-decoration: none;
+    font-family: "Days One", sans-serif;
+    font-size: 24px;
+    border:  3px solid black;
+    padding: 15px 20px 15px 20px;
+    border-radius: 17px;
 }
 
 @media (max-width: 2025px){
