@@ -11,6 +11,10 @@ body {
     color: #FFFFFF;
 }
 
+.cut {
+    overflow: hidden;
+}
+
 .header {
     background-color: #7F42E1;
     position: fixed;
@@ -678,6 +682,7 @@ cursor: pointer;
 .burger-slide {
     display: flex;
     column-gap: 15px;
+    overflow: hidden;
 }
 
 .burger-slide-all {
