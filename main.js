@@ -20,87 +20,87 @@ let pos10 = 0
 let img10 = document.querySelector('.img10')
 window.addEventListener('wheel', function(event){
         if(event.deltaY>0){
-            pos1+=50
-            pos2+=50
-            pos3+=50
-            pos4+=50
-            pos5+=50
-            pos6+=50
-            pos7+=50
-            pos8+=50
-            pos9+=50
-            pos10+=50
-            if(pos1 > 300){
-                pos1 =300
+            pos1+=30
+            pos2+=30
+            pos3+=30
+            pos4+=30
+            pos5+=30
+            pos6+=30
+            pos7+=30
+            pos8+=30
+            pos9+=30
+            pos10+=30
+            if(pos1 > 120){
+                pos1 =120
             }
-            if(pos2 > 300){
-                pos2 =300
+            if(pos2 > 120){
+                pos2 =120
             }
-            if(pos3 > 150){
-                pos3 =150
+            if(pos3 > 120){
+                pos3 =120
             }
-            if(pos4 > 300){
-                pos4 =300
+            if(pos4 > 120){
+                pos4 =120
             }
-            if(pos5 > 300){
-                pos5 =300
+            if(pos5 > 120){
+                pos5 =120
             }
-            if(pos6 > 300){
-                pos6 =300
+            if(pos6 > 120){
+                pos6 =120
             }
-            if(pos7 > 300){
-                pos7 =300
+            if(pos7 > 120){
+                pos7 =120
             }
-            if(pos8 > 300){
-                pos8 =300
+            if(pos8 > 120){
+                pos8 =120
             }
-            if(pos9 > 300){
-                pos9 =300
+            if(pos9 > 120){
+                pos9 =120
             }
-            if(pos10 > 300){
-                pos10 =300
+            if(pos10 > 120){
+                pos10 =120
             }
         }
         else{
-            pos1-=50
-            if(pos1 < -150){
-                pos1 =-150
+            pos1-=30
+            if(pos1 < -120){
+                pos1 =-120
             }
-            pos2-=50
-            if(pos2 < -150){
-                pos2 =-150
+            pos2-=30
+            if(pos2 < -120){
+                pos2 =-120
             }
-            pos3-=50
-            if(pos3 < -150){
-                pos3 =-150
+            pos3-=30
+            if(pos3 < -120){
+                pos3 =-120
             }
-            pos4-=50
-            if(pos4 < -100){
-                pos4 =-100
+            pos4-=30
+            if(pos4 < -120){
+                pos4 =-120
             }
-            pos5-=50
-            if(pos5 < -150){
-                pos5 =-150
+            pos5-=30
+            if(pos5 < -120){
+                pos5 =-120
             }
-            pos6-=50
-            if(pos6 < -150){
-                pos6 =-150
+            pos6-=30
+            if(pos6 < -120){
+                pos6 =-120
             }
-            pos7-=50
-            if(pos7 < -150){
-                pos7 =-150
+            pos7-=30
+            if(pos7 < -120){
+                pos7 =-120
             }
-            pos8-=50
-            if(pos8 < -150){
-                pos8 =-150
+            pos8-=30
+            if(pos8 < -120){
+                pos8 =-120
             }
-            pos9-=50
-            if(pos9 < -150){
-                pos9 =-150
+            pos9-=30
+            if(pos9 < -120){
+                pos9 =-120
             }
-            pos10-=50
-            if(pos10 < -150){
-                pos10 =-150
+            pos10-=30
+            if(pos10 < -120){
+                pos10 =-120
             }
         }
     img1.style.transform = `translateX(${pos1}px)`
@@ -254,4 +254,163 @@ burger_btn.addEventListener('click', function(){
 crest_btn.addEventListener('click', function(){
     burger.style.display='none'
     cut.style.display='block'
+})
+
+
+let current_index = 0
+
+function move_slide(index){
+    let burger_slide = document.querySelector('.burger-slide')
+    if(index < 0){
+        current_index=9
+    }
+    else if(index >= 10){
+        current_index=0
+    }
+    else{
+        current_index=index
+    }
+    let offset=-(current_index*287)
+    burger_slide.style.transform=`translateX(${offset}px)`
+}
+
+let burger_slider_btn_1 = document.querySelector('.burger-slider-btn-1')
+let burger_slider_btn_2 = document.querySelector('.burger-slider-btn-2')
+let burger_slider_btn_3 = document.querySelector('.burger-slider-btn-3')
+let burger_slider_btn_4 = document.querySelector('.burger-slider-btn-4')
+let burger_slider_btn_5 = document.querySelector('.burger-slider-btn-5')
+let burger_slider_btn_6 = document.querySelector('.burger-slider-btn-6')
+let burger_slider_btn_7 = document.querySelector('.burger-slider-btn-7')
+let burger_slider_btn_8 = document.querySelector('.burger-slider-btn-8')
+let burger_slider_btn_9 = document.querySelector('.burger-slider-btn-9')
+let burger_slider_btn_10 = document.querySelector('.burger-slider-btn-10')
+
+burger_slider_btn_1.addEventListener('click', function(){
+    burger_slider_btn_1.style.border='1px solid #000000ff'
+    burger_slider_btn_2.style.border='1px solid #e1e1e1'
+    burger_slider_btn_3.style.border='1px solid #e1e1e1'
+    burger_slider_btn_4.style.border='1px solid #e1e1e1'
+    burger_slider_btn_5.style.border='1px solid #e1e1e1'
+    burger_slider_btn_6.style.border='1px solid #e1e1e1'
+    burger_slider_btn_7.style.border='1px solid #e1e1e1'
+    burger_slider_btn_8.style.border='1px solid #e1e1e1'
+    burger_slider_btn_9.style.border='1px solid #e1e1e1'
+    burger_slider_btn_10.style.border='1px solid #e1e1e1'
+})
+
+burger_slider_btn_2.addEventListener('click', function(){
+    burger_slider_btn_1.style.border='1px solid #e1e1e1'
+    burger_slider_btn_2.style.border='1px solid #000000ff'
+    burger_slider_btn_3.style.border='1px solid #e1e1e1'
+    burger_slider_btn_4.style.border='1px solid #e1e1e1'
+    burger_slider_btn_5.style.border='1px solid #e1e1e1'
+    burger_slider_btn_6.style.border='1px solid #e1e1e1'
+    burger_slider_btn_7.style.border='1px solid #e1e1e1'
+    burger_slider_btn_8.style.border='1px solid #e1e1e1'
+    burger_slider_btn_9.style.border='1px solid #e1e1e1'
+    burger_slider_btn_10.style.border='1px solid #e1e1e1'
+})
+
+burger_slider_btn_3.addEventListener('click', function(){
+    burger_slider_btn_1.style.border='1px solid #e1e1e1'
+    burger_slider_btn_2.style.border='1px solid #e1e1e1'
+    burger_slider_btn_3.style.border='1px solid #000000ff'
+    burger_slider_btn_4.style.border='1px solid #e1e1e1'
+    burger_slider_btn_5.style.border='1px solid #e1e1e1'
+    burger_slider_btn_6.style.border='1px solid #e1e1e1'
+    burger_slider_btn_7.style.border='1px solid #e1e1e1'
+    burger_slider_btn_8.style.border='1px solid #e1e1e1'
+    burger_slider_btn_9.style.border='1px solid #e1e1e1'
+    burger_slider_btn_10.style.border='1px solid #e1e1e1'
+})
+
+burger_slider_btn_4.addEventListener('click', function(){
+    burger_slider_btn_1.style.border='1px solid #e1e1e1'
+    burger_slider_btn_2.style.border='1px solid #e1e1e1'
+    burger_slider_btn_3.style.border='1px solid #e1e1e1'
+    burger_slider_btn_4.style.border='1px solid #000000ff'
+    burger_slider_btn_5.style.border='1px solid #e1e1e1'
+    burger_slider_btn_6.style.border='1px solid #e1e1e1'
+    burger_slider_btn_7.style.border='1px solid #e1e1e1'
+    burger_slider_btn_8.style.border='1px solid #e1e1e1'
+    burger_slider_btn_9.style.border='1px solid #e1e1e1'
+    burger_slider_btn_10.style.border='1px solid #e1e1e1'
+})
+
+burger_slider_btn_5.addEventListener('click', function(){
+    burger_slider_btn_1.style.border='1px solid #e1e1e1'
+    burger_slider_btn_2.style.border='1px solid #e1e1e1'
+    burger_slider_btn_3.style.border='1px solid #e1e1e1'
+    burger_slider_btn_4.style.border='1px solid #e1e1e1'
+    burger_slider_btn_5.style.border='1px solid #000000ff'
+    burger_slider_btn_6.style.border='1px solid #e1e1e1'
+    burger_slider_btn_7.style.border='1px solid #e1e1e1'
+    burger_slider_btn_8.style.border='1px solid #e1e1e1'
+    burger_slider_btn_9.style.border='1px solid #e1e1e1'
+    burger_slider_btn_10.style.border='1px solid #e1e1e1'
+})
+
+burger_slider_btn_6.addEventListener('click', function(){
+    burger_slider_btn_1.style.border='1px solid #e1e1e1'
+    burger_slider_btn_2.style.border='1px solid #e1e1e1'
+    burger_slider_btn_3.style.border='1px solid #e1e1e1'
+    burger_slider_btn_4.style.border='1px solid #e1e1e1'
+    burger_slider_btn_5.style.border='1px solid #e1e1e1'
+    burger_slider_btn_6.style.border='1px solid #000000ff'
+    burger_slider_btn_7.style.border='1px solid #e1e1e1'
+    burger_slider_btn_8.style.border='1px solid #e1e1e1'
+    burger_slider_btn_9.style.border='1px solid #e1e1e1'
+    burger_slider_btn_10.style.border='1px solid #e1e1e1'
+})
+
+burger_slider_btn_7.addEventListener('click', function(){
+    burger_slider_btn_1.style.border='1px solid #e1e1e1'
+    burger_slider_btn_2.style.border='1px solid #e1e1e1'
+    burger_slider_btn_3.style.border='1px solid #e1e1e1'
+    burger_slider_btn_4.style.border='1px solid #e1e1e1'
+    burger_slider_btn_5.style.border='1px solid #e1e1e1'
+    burger_slider_btn_6.style.border='1px solid #e1e1e1'
+    burger_slider_btn_7.style.border='1px solid #000000ff'
+    burger_slider_btn_8.style.border='1px solid #e1e1e1'
+    burger_slider_btn_9.style.border='1px solid #e1e1e1'
+    burger_slider_btn_10.style.border='1px solid #e1e1e1'
+})
+
+burger_slider_btn_8.addEventListener('click', function(){
+    burger_slider_btn_1.style.border='1px solid #e1e1e1'
+    burger_slider_btn_2.style.border='1px solid #e1e1e1'
+    burger_slider_btn_3.style.border='1px solid #e1e1e1'
+    burger_slider_btn_4.style.border='1px solid #e1e1e1'
+    burger_slider_btn_5.style.border='1px solid #e1e1e1'
+    burger_slider_btn_6.style.border='1px solid #e1e1e1'
+    burger_slider_btn_7.style.border='1px solid #e1e1e1'
+    burger_slider_btn_8.style.border='1px solid #000000ff'
+    burger_slider_btn_9.style.border='1px solid #e1e1e1'
+    burger_slider_btn_10.style.border='1px solid #e1e1e1'
+})
+
+burger_slider_btn_9.addEventListener('click', function(){
+    burger_slider_btn_1.style.border='1px solid #e1e1e1'
+    burger_slider_btn_2.style.border='1px solid #e1e1e1'
+    burger_slider_btn_3.style.border='1px solid #e1e1e1'
+    burger_slider_btn_4.style.border='1px solid #e1e1e1'
+    burger_slider_btn_5.style.border='1px solid #e1e1e1'
+    burger_slider_btn_6.style.border='1px solid #e1e1e1'
+    burger_slider_btn_7.style.border='1px solid #e1e1e1'
+    burger_slider_btn_8.style.border='1px solid #e1e1e1'
+    burger_slider_btn_9.style.border='1px solid #000000ff'
+    burger_slider_btn_10.style.border='1px solid #e1e1e1'
+})
+
+burger_slider_btn_10.addEventListener('click', function(){
+    burger_slider_btn_1.style.border='1px solid #e1e1e1'
+    burger_slider_btn_2.style.border='1px solid #e1e1e1'
+    burger_slider_btn_3.style.border='1px solid #e1e1e1'
+    burger_slider_btn_4.style.border='1px solid #e1e1e1'
+    burger_slider_btn_5.style.border='1px solid #e1e1e1'
+    burger_slider_btn_6.style.border='1px solid #e1e1e1'
+    burger_slider_btn_7.style.border='1px solid #e1e1e1'
+    burger_slider_btn_8.style.border='1px solid #e1e1e1'
+    burger_slider_btn_9.style.border='1px solid #e1e1e1'
+    burger_slider_btn_10.style.border='1px solid #000000ff'
 })

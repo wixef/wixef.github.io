@@ -518,7 +518,7 @@ cursor: pointer;
 }
 
 .slider-all {
-    min-height: 512px;
+    max-height: 512px;
     border-radius: 25px;
     padding: 20px;
     display: flex;
@@ -653,6 +653,9 @@ cursor: pointer;
 
 .burger-slider {
     margin: 100px 0px 0px 30px;
+    overflow: hidden;
+    min-width: 100%;
+    position: relative;
 }
 
 .burger-slider-btn {
@@ -682,7 +685,7 @@ cursor: pointer;
 .burger-slide {
     display: flex;
     column-gap: 15px;
-    overflow: hidden;
+
 }
 
 .burger-slide-all {
