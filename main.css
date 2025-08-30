@@ -398,7 +398,6 @@ body {
 }
 
 .cl-btn {
-    min-width: 746px;
     min-height: 140px;
     border-radius: 19px;
     padding: 30px;
@@ -763,7 +762,9 @@ cursor: pointer;
     .cl-btn{
         min-width: none;
     }
-
+        .slider-img{
+        display: none;
+    }
 }
 
 
@@ -774,13 +775,106 @@ cursor: pointer;
     .img4{
         display: none;
     }
+            .img5{
+        display: none;}
+    .img9{
+        display: none;
+    }
     .header-menu-client {
+        display: none;
+    }
+    .img7{
         display: none;
     }
 }
 
-@media (max-width: 609px){
-    .img5{
+@media (max-width: 800px){
+        h1{
+            font-size: 35px;
+        }
+        .sec-btn{
+            max-width: 609px;
+        }
+                div{
+            font-size: 32px;
+        }
+                p{
+            font-size: 15px;
+            font-weight: 600;
+        }
+                #text{
+            font-size: 20px;
+        }
+                .bis-title{
+            font-size: 35px;
+        }
+            .bis-title1{
+            font-size: 25px;
+        }
+            .cut{
+            max-width: 800px;
+        }
+        img{
+            max-width: 609px;
+        }
+        .client{
+            max-width: 609px;
+        }
+        .cl-btn{
+            max-width: 609px;
+            min-width: none;
+        }
+}
+
+@media (max-width: 609px){   
+        .img6{
         display: none;
     }
+        h1{
+            font-size: 30px;
+        }
+                div{
+            font-size: 30px;
+        }
+                p{
+            font-size: 12px;
+            font-weight: 600;
+        }
+                #text{
+            font-size: 20px;
+        }
+                .bis-title{
+            font-size: 30px;
+        }
+            .bis-title1{
+            font-size: 20px;
+        }
+        .cut{
+            max-width: 609px;
+        }
+}
+
+@media (max-width: 500px){
+        h1{
+            font-size: 25px;
+        }
+                div{
+            font-size: 25px;
+        }
+                p{
+            font-size: 10px;
+            font-weight: 600;
+        }
+                #text{
+            font-size: 15px;
+        }
+                .bis-title{
+            font-size: 25px;
+        }
+            .bis-title1{
+            font-size: 15px;
+        }
+            .cut{
+            max-width: 500px;
+        }
 }
