@@ -161,15 +161,8 @@ window.addEventListener('scroll', function() {
         }
     }
 });
-const burger_btn2 = document.querySelector('.burger-btn2');
 
-window.onscroll = function() {
-    if (window.pageYOffset > 1000) {
-        burger_btn2.style.display = 'flex';
-    } else {
-        burger_btn2.style.display = 'none';
-    }
-};
+
 
 // Burger menu functionality
 const burger_btn = document.querySelector('.burger-btn');
@@ -314,3 +307,28 @@ window.addEventListener('resize', function() {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+            const burger_btn = document.querySelector('.burger-btn');
+            
+            // Функция для обработки прокрутки
+            function handleScroll() {
+                const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollPosition > 1000) {
+                    // Меняем фоновое изображение при прокрутке более 1000px
+                    burger_btn.style.backgroundImage = "url('img/burger2.png')";
+                    burger_btn.style.border = '3px solid #000000ff';
+                } else {
+                    // Возвращаем исходное изображение при прокрутке менее 1000px
+                    burger_btn.style.backgroundImage = "url('img/burger.png')";
+                    burger_btn.style.border = '3px solid white';
+                }
+            }
+            
+            // Слушаем событие прокрутки
+            window.addEventListener('scroll', handleScroll);
+            
+            // Вызываем сразу на случай, если страница уже прокручена
+            handleScroll();
+        });
