@@ -32,7 +32,7 @@ body {
     column-gap: 40px;
     position: fixed;
     align-items: center;
-    min-width: 66.6%;
+    min-width: 100%;
     padding-bottom: 20px;
 }
 
@@ -102,7 +102,7 @@ body {
 
 .vector1 {
     display: block;
-    margin: 300px auto 0px;
+    margin: 262px auto 0px;
 }
 
 .img {
@@ -152,7 +152,7 @@ body {
     height: 43px;
     width: 56px;
     left: 700px;
-    top: 700px
+    top: 750px
 }
 
 .img6 {
@@ -441,7 +441,7 @@ body {
 }
 
 .slider-text-p {
-    margin-bottom: 280px;
+    margin-bottom: 53%;
 }
 
 .slider-text-a {
@@ -523,6 +523,17 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     display: none;
+    margin-bottom: 70px;
+}
+
+.cart {
+    margin-bottom: 50px;
+}
+
+.danil {
+    margin-top: 125px;
+    margin: 300px auto;
+
 }
 
 .slider-1 {
@@ -568,10 +579,19 @@ cursor: pointer;
 
 .burger-btn {
     border:  3px solid #FFFFFF;
-    padding: 15px 20px 15px 20px;
+    padding: 20px;
     border-radius: 17px;
     display: none;
     height: 25px;
+}
+
+.burger-btn2 {
+    border:  3px solid #000000;
+    padding: 20px;
+    border-radius: 17px;
+    display: none;
+    border: none;
+    height: 27px;
 }
 
 .crest-btn {
@@ -730,7 +750,6 @@ cursor: pointer;
     }
     .header-back{
         padding: 2%;
-        min-width: 98%;
     }
 }
 
@@ -877,4 +896,1236 @@ cursor: pointer;
             .cut{
             max-width: 500px;
         }
+}
+
+/* Мобильная оптимизация */
+@media (max-width: 768px) {
+    /* Общие стили */
+    body {
+        font-size: 14px;
+    }
+    
+    /* Хедер */
+    .header-back {
+        padding: 10px 5%;
+        flex-wrap: wrap;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    .header-auth {
+        column-gap: 10px;
+    }
+    
+    .header-menu-auth {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+    
+    .burger-btn {
+        padding: 10px;
+        height: 20px;
+    }
+    
+    /* Главный блок */
+    .main {
+        padding: 100px 5% 50px;
+        text-align: center;
+    }
+    
+    .main-h {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .main-btn {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+    
+    .vector1 {
+        margin: 100px auto 0;
+        width: 30px;
+    }
+    
+    /* Бизнес блок */
+    .bisness {
+        padding: 0 5%;
+    }
+    
+    .bis-title {
+        font-size: 24px;
+        margin: 30px 0;
+    }
+    
+    .bis {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .bis1, .bis2 {
+        max-width: 100%;
+    }
+    
+    .bis-title1 {
+        font-size: 18px;
+    }
+    
+    .bis-desk {
+        margin: 10px 0;
+    }
+    
+    /* Безопасность */
+    .security {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    
+    .sec-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .sec-btn {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .sec-btn-text {
+        width: 100%;
+    }
+    
+    /* Поддержка */
+    .support {
+        padding: 0 5%;
+    }
+    
+    .support-title {
+        font-size: 24px;
+    }
+    
+    .sup-title-p {
+        font-size: 16px;
+    }
+    
+    .sup {
+        flex-direction: column;
+    }
+    
+    .sup-1, .sup-2, .sup-3, .sup-4 {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .sup-img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Клиенты */
+    .client {
+        padding: 0 5%;
+    }
+    
+    .cl-title {
+        font-size: 24px;
+    }
+    
+    .cl-btn {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .cl-btn-text {
+        width: 100%;
+    }
+    
+    .vector3 {
+        width: 80px;
+    }
+    
+    /* Слайдер */
+    .slider {
+        padding: 0 5%;
+    }
+    
+    .slider-title {
+        font-size: 24px;
+    }
+    
+    .slider-link {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 14px;
+    }
+    
+    .slider-all {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .slider-text {
+        max-width: 100%;
+    }
+    
+    .slider-text-p {
+        margin-bottom: 20px;
+    }
+    
+    .slider-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    /* Бургер меню */
+    .header-back-burger {
+        padding: 15px 5%;
+    }
+    
+    .header-menu-burger {
+        margin-left: 5%;
+    }
+    
+    .burger-slider {
+        margin: 50px 5% 0;
+    }
+    
+    .burger-slide-all {
+        width: 250px;
+    }
+    
+    .burger-slider-btns {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-h {
+        font-size: 24px;
+    }
+    
+    .main-btn {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+    
+    .bis-title, .sec-title, .support-title, .cl-title, .slider-title {
+        font-size: 20px;
+    }
+    
+    .header-menu-auth {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+/* Отключение анимаций для слабых устройств */
+@media (prefers-reduced-motion: reduce) {
+    .img {
+        transition: none;
+    }
+}
+
+/* Оптимизация для touch-устройств */
+@media (hover: none) and (pointer: coarse) {
+    .header-menu-p:hover, 
+    .header-menu-client:hover, 
+    .header-menu-auth:hover,
+    .slider-link:hover {
+        background-color: transparent;
+    }
+    
+    /* Увеличиваем область клика для мобильных */
+    .header-menu-p, 
+    .header-menu-client, 
+    .header-menu-auth,
+    .slider-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .burger-slider-btn {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+/* Мобильная оптимизация - исправленная версия */
+@media (max-width: 768px) {
+    /* Общие стили */
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+    
+    /* Хедер - скрываем кнопку "Стать клиентом" */
+    .header-back {
+        padding: 10px 5% !important;
+        flex-wrap: wrap;
+    }
+    
+    .header-menu-client {
+        display: none !important;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    .header-auth {
+        column-gap: 10px;
+    }
+    
+    .header-menu-auth {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+    
+    .burger-btn {
+        padding: 10px;
+        height: 20px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Главный блок */
+    .main {
+        padding: 120px 5% 50px !important;
+        text-align: center;
+    }
+    
+    .main-h {
+        font-size: 28px;
+        margin-bottom: 30px;
+        line-height: 1.2;
+    }
+    
+    .main-btn {
+        font-size: 18px;
+        padding: 15px 20px;
+        margin: 0 auto;
+    }
+    
+    .vector1 {
+        margin: 100px auto 0;
+        width: 30px;
+    }
+    
+    /* Скрываем все декоративные изображения на мобильных */
+    .img {
+        display: none !important;
+    }
+    
+    /* Бизнес блок */
+    .bisness {
+        padding: 0 5%;
+    }
+    
+    .bis-title {
+        font-size: 24px;
+        margin: 30px 0;
+        line-height: 1.2;
+    }
+    
+    .bis {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .bis1, .bis2 {
+        max-width: 100%;
+    }
+    
+    .bis-title1 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    
+    .bis-desk {
+        margin: 10px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .bis-desk-p {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    /* Безопасность */
+    .security {
+        flex-direction: column;
+        padding: 0 5%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .sec-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .sec-btns {
+        width: 100%;
+    }
+    
+    .sec-btn {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .sec-btn-text {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Поддержка */
+    .support {
+        padding: 0 5%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .support-title {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .sup-title-p {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .sup {
+        flex-direction: column;
+    }
+    
+    .sup-1, .sup-2, .sup-3, .sup-4 {
+        max-width: 100%;
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .sup-img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Клиенты */
+    .client {
+        padding: 0 5%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .cl-title {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .cl-btns {
+        width: 100%;
+    }
+    
+    .cl-btn {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        min-height: auto;
+    }
+    
+    .cl-btn-text {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .vector3 {
+        width: 60px;
+        height: 60px;
+    }
+    
+    /* Слайдер */
+    .slider {
+        padding: 0 5%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .slider-title {
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.2;
+    }
+    
+    .slider-link {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 14px;
+        justify-content: center;
+    }
+    
+    .slider-all {
+        flex-direction: column;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        max-height: none;
+    }
+    
+    .slider-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .slider-text-p {
+        margin-bottom: 20px;
+    }
+    
+    .slider-img {
+        width: 100%;
+        margin-top: 20px;
+        height: auto;
+    }
+    
+    /* Бургер меню */
+    .burger {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    
+    .header-back-burger {
+        padding: 15px 5%;
+    }
+    
+    .header-menu-burger {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .burger-slider {
+        margin: 30px 5% 0;
+    }
+    
+    .burger-slide-all {
+        width: 250px;
+        flex-shrink: 0;
+    }
+    
+    .burger-slider-btns {
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-h {
+        font-size: 24px;
+    }
+    
+    .main-btn {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+    
+    .bis-title, .sec-title, .support-title, .cl-title, .slider-title {
+        font-size: 20px;
+    }
+    
+    .header-menu-auth {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    
+    .slider-link {
+        font-size: 12px;
+    }
+    
+    .slider-text-title {
+        font-size: 18px;
+    }
+    
+    .slider-text-p {
+        font-size: 14px;
+    }
+}
+
+/* Фикс для скролла на iOS */
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: "Days One", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Улучшение touch-событий */
+@media (hover: none) and (pointer: coarse) {
+    .header-menu-p, 
+    .header-menu-client, 
+    .header-menu-auth,
+    .slider-link,
+    .burger-btn,
+    .crest-btn {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .burger-slider-btn {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+/* Оптимизация для устройств менее 550px */
+@media (max-width: 550px) {
+    /* Хедер */
+    .header-back {
+        padding: 8px 4% !important;
+    }
+    
+    .logo-text {
+        font-size: 18px;
+    }
+    
+    .header-menu-auth {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    
+    .burger-btn {
+        padding: 8px;
+        height: 18px;
+    }
+    
+    .burger-btn img,
+    .crest-btn img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    /* Главный блок */
+    .main {
+        padding: 90px 4% 40px !important;
+    }
+    
+    .main-h {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .main-btn {
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+    
+    .vector1 {
+        margin: 80px auto 0;
+        width: 25px;
+    }
+    
+    /* Бизнес блок */
+    .bisness {
+        padding: 0 4%;
+    }
+    
+    .bis-title {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    
+    .bis-title1 {
+        font-size: 16px;
+    }
+    
+    .bis-desk {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+    
+    .bis-desk-img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .bis-desk-p {
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    /* Безопасность */
+    .security {
+        padding: 0 4%;
+    }
+    
+    .sec-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .sec-btn {
+        padding: 15px;
+        gap: 10px;
+    }
+    
+    .sec-btn-title {
+        font-size: 16px;
+    }
+    
+    .sec-btn-p {
+        font-size: 12px;
+    }
+    
+    .vector2 {
+        width: 24px;
+        height: 24px;
+    }
+    
+    /* Поддержка */
+    .support {
+        padding: 0 4%;
+    }
+    
+    .support-title {
+        font-size: 20px;
+    }
+    
+    .sup-title-p {
+        font-size: 14px;
+    }
+    
+    .sup-text {
+        padding: 20px;
+    }
+    
+    .sup-title {
+        font-size: 16px;
+    }
+    
+    .sup-p {
+        font-size: 12px;
+    }
+    
+    /* Клиенты */
+    .client {
+        padding: 0 4%;
+    }
+    
+    .cl-title {
+        font-size: 20px;
+    }
+    
+    .cl-btn {
+        padding: 15px;
+        gap: 10px;
+    }
+    
+    .cl-btn-title {
+        font-size: 18px;
+    }
+    
+    .cl-btn-p {
+        font-size: 12px;
+    }
+    
+    .vector3 {
+        width: 60px;
+        height: 60px;
+    }
+    
+    /* Слайдер */
+    .slider {
+        padding: 0 4%;
+    }
+    
+    .slider-title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .slider-link {
+        gap: 8px;
+        font-size: 12px;
+        justify-content: center;
+    }
+    
+    .slider-all {
+        padding: 12px;
+    }
+    
+    .slider-text-title {
+        font-size: 16px;
+    }
+    
+    .slider-text-p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .slider-text-a {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    
+    /* Бургер меню */
+    .header-back-burger {
+        padding: 12px 4%;
+    }
+    
+    .header-menu-burger {
+        margin-left: 4%;
+        margin-right: 4%;
+        font-size: 16px;
+    }
+    
+    .header-menu-auth-burger {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    
+    .burger-slider {
+        margin: 40px 4% 0;
+    }
+    
+    .burger-slide-all {
+        width: 220px;
+        height: 190px;
+    }
+    
+    .burger-slide-p {
+        font-size: 14px;
+        padding: 12px;
+    }
+    
+    .burger-strelka {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Оптимизация для устройств менее 400px */
+@media (max-width: 400px) {
+    /* Хедер */
+    .header-back {
+        padding: 6px 3% !important;
+        flex-wrap: nowrap;
+    }
+    
+    .logo-text {
+        font-size: 16px;
+    }
+    
+    .header-auth {
+        column-gap: 8px;
+    }
+    
+    .header-menu-auth {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+    
+    .burger-btn {
+        padding: 6px;
+        height: 16px;
+    }
+    
+    /* Главный блок */
+    .main {
+        padding: 80px 3% 30px !important;
+    }
+    
+    .main-h {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .main-btn {
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+    
+    .vector1 {
+        margin: 60px auto 0;
+        width: 20px;
+    }
+    
+    /* Бизнес блок */
+    .bisness {
+        padding: 0 3%;
+    }
+    
+    .bis-title {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    
+    .bis {
+        gap: 20px;
+    }
+    
+    .bis-title1 {
+        font-size: 15px;
+    }
+    
+    .bis-desk-img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .bis-desk-p {
+        font-size: 11px;
+    }
+    
+    /* Безопасность */
+    .security {
+        padding: 0 3%;
+    }
+    
+    .sec-title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .sec-btn {
+        padding: 12px;
+    }
+    
+    .sec-btn-title {
+        font-size: 15px;
+    }
+    
+    .sec-btn-p {
+        font-size: 11px;
+    }
+    
+    .vector2 {
+        width: 20px;
+        height: 20px;
+    }
+    
+    /* Поддержка */
+    .support {
+        padding: 0 3%;
+    }
+    
+    .support-title {
+        font-size: 18px;
+    }
+    
+    .sup-title-p {
+        font-size: 13px;
+    }
+    
+    .sup-text {
+        padding: 15px;
+    }
+    
+    .sup-title {
+        font-size: 15px;
+    }
+    
+    .sup-p {
+        font-size: 11px;
+    }
+    
+    .sup-img {
+        max-width: 90%;
+    }
+    
+    /* Клиенты */
+    .client {
+        padding: 0 3%;
+    }
+    
+    .cl-title {
+        font-size: 18px;
+    }
+    
+    .cl-btn {
+        padding: 12px;
+        min-height: auto;
+    }
+    
+    .cl-btn-title {
+        font-size: 16px;
+    }
+    
+    .cl-btn-p {
+        font-size: 11px;
+    }
+    
+    .vector3 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* Слайдер */
+    .slider {
+        padding: 0 3%;
+    }
+    
+    .slider-title {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    
+    .slider-link {
+        gap: 6px;
+        font-size: 11px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .slider-link p {
+        padding-bottom: 10px;
+    }
+    
+    .slider-all {
+        padding: 10px;
+    }
+    
+    .slider-text {
+        margin: 15px;
+    }
+    
+    .slider-text-title {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .slider-text-p {
+        font-size: 11px;
+        margin-bottom: 12px;
+    }
+    
+    .slider-text-a {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+    
+    /* Бургер меню */
+    .header-back-burger {
+        padding: 10px 3%;
+    }
+    
+    .header-menu-burger {
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 14px;
+        row-gap: 25px;
+    }
+    
+    .header-menu-auth-burger {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    
+    .burger-slider {
+        margin: 30px 3% 0;
+    }
+    
+    .burger-slider-btns {
+        gap: 3px;
+    }
+    
+    .burger-slider-btn {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    
+    .burger-slide-all {
+        width: 200px;
+        height: 170px;
+    }
+    
+    .burger-slide-p {
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .burger-strelka {
+        width: 14px;
+        height: 14px;
+    }
+    
+    /* Улучшение touch-целей для очень маленьких экранов */
+    .header-menu-p, 
+    .header-menu-auth,
+    .slider-link,
+    .main-btn,
+    .burger-btn,
+    .crest-btn,
+    .burger-slider-btn {
+        min-height: 40px;
+        min-width: 40px;
+    }
+    
+    /* Скрываем дополнительные элементы */
+    .bis-img,
+    .sup-img {
+        max-width: 80%;
+    }
+    
+    /* Улучшаем межстрочные интервалы */
+    p, h1, h2, h3 {
+        line-height: 1.3;
+    }
+}
+
+/* Дополнительные оптимизации для очень маленьких экранов */
+@media (max-width: 350px) {
+    .main-h {
+        font-size: 18px;
+    }
+    
+    .main-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    
+    .bis-title,
+    .sec-title,
+    .support-title,
+    .cl-title,
+    .slider-title {
+        font-size: 16px;
+    }
+    
+    .bis-title1,
+    .sec-btn-title,
+    .sup-title,
+    .slider-text-title {
+        font-size: 14px;
+    }
+    
+    .header-menu-auth {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+    
+    .slider-link {
+        font-size: 10px;
+    }
+    
+    /* Упрощаем навигацию */
+    .header-auth {
+        column-gap: 5px;
+    }
+    
+    /* Уменьшаем отступы */
+    .main,
+    .bisness,
+    .security,
+    .support,
+    .client,
+    .slider {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+/* Оптимизация landscape ориентации на мобильных */
+@media (max-height: 500px) and (orientation: landscape) {
+    .main {
+        padding-top: 150px !important;
+        padding-bottom: 30px !important;
+    }
+    
+    .main-h {
+        margin-bottom: 20px;
+    }
+    
+    .vector1 {
+        margin: 50px auto 0;
+    }
+    
+    /* Уменьшаем высоту секций */
+    .bisness,
+    .security,
+    .support,
+    .client {
+        margin-bottom: 50px;
+    }
+    
+    .bis {
+        margin-bottom: 30px;
+    }
+    
+    /* Улучшаем компактность */
+    .sup-text {
+        padding: 15px;
+    }
+    
+    .cl-btn {
+        padding: 15px;
+    }
+}
+
+/* Предотвращение горизонтального скролла */
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Улучшение производительности на слабых устройствах */
+@media (max-width: 400px) {
+    .img {
+        display: none !important;
+    }
+    
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    /* Упрощаем тени и эффекты */
+    .header-menu-client,
+    .header-menu-auth,
+    .main-btn,
+    .slider-text-a {
+        box-shadow: none;
+    }
+}
+
+/* Оптимизация для медленных сетей */
+@media (max-width: 550px) {
+    
+    .bis-img,
+    .sup-img,
+    .slider-img {
+        background-color: #f0f0f0;
+        min-height: 100px;
+    }
 }

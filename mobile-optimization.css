@@ -1,0 +1,156 @@
+/* Улучшение производительности на мобильных */
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+/* Оптимизация анимаций */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Улучшение читаемости на маленьких экранах */
+p, span, div {
+    text-rendering: optimizeLegibility;
+    hyphens: auto;
+    line-height: 1.4;
+}
+
+/* Оптимизация изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Улучшение скролла на iOS */
+body {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+}
+
+/* Предотвращение выделения текста при тапе */
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Оптимизация для очень маленьких экранов */
+@media (max-width: 400px) {
+    body {
+        font-size: 13px;
+    }
+    
+    h1 {
+        font-size: 1.5em !important;
+        line-height: 1.2;
+    }
+    
+    h2 {
+        font-size: 1.3em !important;
+        line-height: 1.2;
+    }
+    
+    /* Улучшение touch targets */
+    button, a, [role="button"] {
+        min-height: 40px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Упрощение layout */
+    .bis-desk,
+    .sec-btn,
+    .cl-btn {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Уменьшение отступов */
+    .main,
+    .bisness,
+    .security,
+    .support,
+    .client,
+    .slider {
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+    }
+}
+
+/* Предотвращение zoom на инпутах в iOS */
+@media (max-width: 550px) {
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* Оптимизация для landscape режима */
+@media (max-height: 500px) and (orientation: landscape) {
+    .main {
+        min-height: auto;
+        padding: 100px 5% 30px !important;
+    }
+    
+    .main-h {
+        margin-bottom: 15px;
+    }
+    
+    /* Компактный режим для landscape */
+    .bis-desk,
+    .sec-btn,
+    .cl-btn {
+        padding: 8px;
+    }
+}
+
+/* Улучшение производительности на слабых устройствах */
+@media (max-width: 550px) {
+    .img {
+        display: none !important;
+    }
+    
+    /* Упрощение сложных стилей */
+    * {
+        background-attachment: scroll !important;
+    }
+    
+    /* Оптимизация трансформаций */
+    .burger-slide {
+        transform: translateZ(0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+    }
+}
+
+/* Базовая оптимизация для всех мобильных */
+@media (hover: none) and (pointer: coarse) {
+    /* Улучшение touch feedback */
+    .header-menu-p:active,
+    .header-menu-auth:active,
+    .slider-link:active,
+    .main-btn:active,
+    .burger-btn:active {
+        opacity: 0.7;
+        transform: scale(0.98);
+    }
+    
+    /* Предотвращение залипания :hover */
+    .header-menu-p:hover,
+    .header-menu-auth:hover,
+    .slider-link:hover {
+        background-color: transparent;
+    }
+}
